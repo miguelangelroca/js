@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dígitos de un número</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var num = prompt("Escriba el número para contar y mostrar sus dígitos: ");
+        if (num < 1000) {
+            alert(`El número tiene ${num.length} dígitos.`);
+            for (i = 0; i < num.length; i++) {
+                alert(`Dígito ${i + 1} ===> ${num[i]}`);
+            }
+        } else {
+            alert('El número tiene que ser menor que 1000');
+        }
+    </script>
+</body>
+
+</html>
