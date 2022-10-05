@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bisisesto</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var anyo = prompt("Introduzca el año: ");
+        (anyo % 4 !== 0) ? alert(`El ${anyo} no es bisiesto`) :
+            (anyo % 100 !== 0) ? alert(`El ${anyo} es bisiesto`) :
+                (anyo % 400 !== 0) ? alert(`El ${anyo} no es bisiesto`) : alert(`El ${anyo} es bisiesto`);
+    </script>
+</body>
+
+</html>
