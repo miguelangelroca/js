@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var dic = { casa: 'home', mesa: 'table', perro: 'dog', gato: 'cat' };
+        var nom = prompt("Escriba una de estas opciones: casa, mesa, perro, gato.").toLocaleLowerCase();
+        if (nom == 'casa' || nom == 'mesa' || nom == 'perro' || nom == 'gato') {
+            alert(dic[nom]);
+        } else {
+            alert("La opcion no es correcta.");
+        }
+    </script>
+</body>
+
+</html>
