@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literales</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var literales = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"];
+        var num = prompt("Escriba un número entre 1 y 5 para mostrar su literal: ");
+        if (num > 0 && num <= 5) {
+            alert(`El literal de ${num} es: ${literales[num - 1]}`);
+        } else {
+            alert("El número debe estar comprendido entre 1 y 5.");
+        }
+
+    </script>
+</body>
+
+</html>
