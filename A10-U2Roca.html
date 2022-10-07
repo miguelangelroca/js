@@ -9,15 +9,34 @@
 </head>
 
 <body>
+    <h3>Seleccione la parte a sumar: </h3>
+    <button onclick="entera()" name="entera">Entera</button>
+    <button onclick="decimal()" name="decimal">Decimal</button>
     <script type="text/javascript">
-        var num = prompt("Escriba un número: ");
-        var res = 0;
-        for (i = 0; i < num.length; i++) {
-            if (num[i] > 0) {
+
+        function entera() {
+            var num = prompt("Introduzca el número: ");
+            var res = 0;
+            for (i = 0; i < num.length; i++) {
+                if (num[i] == "." || num[i] == ",") {
+                    break;
+                }
                 res += parseInt(num[i]);
             }
+            alert(`La suma de los dígitos es: ${res}`);
         }
-        alert(`La suma de los dígitos es: ${res}`);
+
+        function decimal() {
+            var num = prompt("Introduzca el número: ");
+            var res = 0;
+            for (i = 0; i < num.length; i++) {
+                if (num[i] == "." || num[i] == ",") {
+                    continue;
+                }
+                res += parseInt(num[i]);
+            }
+            alert(`La suma de los dígitos es: ${res}`);
+        }
 
     </script>
 </body>
