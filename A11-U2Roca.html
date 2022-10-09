@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var opcion = prompt(`Calculadora: 
+        Pulse 1 para sumar
+        Pulse 2 para restar
+        Pulse 3 para multiplicar
+        Pulse 4 para dividir
+        Pulse 5 para obtener el módulo
+        Pulse 6 para salir`);
+
+        switch (opcion) {
+            case "1":
+                var num1 = parseInt(prompt("Introduzca el primer número: "));
+                var num2 = parseInt(prompt("Introduzca el segundo número: "));
+                alert(num1 + num2);
+                break;
+            case "2":
+                var num1 = parseInt(prompt("Introduzca el primer número: "));
+                var num2 = parseInt(prompt("Introduzca el segundo número: "));
+                alert(num1 - num2);
+                break;
+            case "3":
+                var num1 = parseInt(prompt("Introduzca el primer número: "));
+                var num2 = parseInt(prompt("Introduzca el segundo número: "));
+                alert(num1 * num2);
+                break;
+            case "4":
+                var num1 = parseInt(prompt("Introduzca el primer número: "));
+                var num2 = parseInt(prompt("Introduzca el segundo número: "));
+                alert(num1 / num2);
+                break;
+            case "5":
+                var num1 = parseInt(prompt("Introduzca el primer número: "));
+                var num2 = parseInt(prompt("Introduzca el segundo número: "));
+                alert(num1 % num2);
+                break;
+            case "6":
+                confirm("¿Seguro desea salir?");
+                break;
+            default:
+                alert("¡Opción no valida!");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
