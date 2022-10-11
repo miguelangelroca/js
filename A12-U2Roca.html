@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var valores = [true, 5, false, "hola", "adios", 2];
+        logico = [];
+        cadena = [];
+        numero = [];
+
+        for (i = 0; i < valores.length; i++) {
+            valor = typeof valores[i]
+            if (valor == 'boolean') {
+                logico.push(valores[i])
+            }
+            if (valor == 'string') {
+                cadena.push(valores[i])
+            }
+            if (valor == 'number') {
+                numero.push(valores[i])
+            }
+        }
+        alert(`La operacion logica OR de ${logico[0]} || ${logico[1]} es: ${logico[0] || logico[1]}\nLa operacion logica AND de ${logico[0]} && ${logico[1]} es: ${logico[0] && logico[1]}`);
+        alert(`De las dos cadenas la de mayor longitud es: ${cadena[0].length > cadena[1].length ? cadena[0] : cadena[1]}`);
+        alert(`La suma de ${numero[0]} + ${numero[1]} es: ${numero[0] + numero[1]}\nLa multiplicacion de ${numero[0]} * ${numero[1]} es: ${numero[0] * numero[1]}`);
+    </script>
+</body>
+
+</html>
