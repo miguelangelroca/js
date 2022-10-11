@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palíndromo</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var cadena = (prompt("Introduzca una cadena para comprobar si es un palíndromo: ").toLowerCase().split(" ").join("")).split("");
+        var cadena2 = cadena.slice().reverse();
+        var resultado = "";
+        for (i = 0; i < cadena.length; i++) {
+            if (cadena[i] != cadena2[i]) {
+                resultado = "¡No es un palíndromo!";
+                break;
+            } else {
+                resultado = "¡Es un palíndromo!";
+            }
+        }
+        alert(resultado);
+
+    </script>
+</body>
+
+</html>
