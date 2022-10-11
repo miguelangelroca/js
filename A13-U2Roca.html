@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var valor = "password123"
+        var parada = true
+        while (parada) {
+            var pass = prompt("Introduzca la contraseña de acceso: ");
+            if (pass === valor) {
+                parada = false
+            } else {
+                alert("Contraseña incorrecta.")
+            }
+        }
+        alert("¡Bienvenido!");
+    </script>
+</body>
+
+</html>
