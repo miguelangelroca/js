@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisible</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var contador = 1;
+        var flag = 0;
+        while (contador <= 20) {
+            if (contador % 3 == 0) {
+                alert(`El número ${contador} es Divisible por 3`);
+                flag++;
+            }
+            if (contador % 5 == 0) {
+                alert(`El número ${contador} es Divisible por 5`);
+                flag++;
+            }
+            if (flag == 2) {
+                alert(`El número ${contador} es Divisible por 3 y 5`);
+            } else if (flag == 0) {
+                alert(`El número ${contador} no es Divisible por 3 y 5`);
+            }
+            contador++;
+            flag = 0;
+        }
+    </script>
+</body>
+
+</html>

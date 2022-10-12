@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Musical</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var musicians = parseInt(prompt("Escriba cuantos miembros componen la banda musical: "));
+        if (musicians <= 0) {
+            alert("not a group");
+        } else if (musicians == 1) {
+            alert("solo");
+        } else if (musicians == 2) {
+            alert("duet");
+        } else if (musicians == 3) {
+            alert("trio");
+        } else if (musicians == 4) {
+            alert("quartet");
+        } else if (musicians > 4) {
+            alert("thes es a large group");
+        } else {
+            alert("¡Debe escribir un número!")
+        }
+    </script>
+</body>
+
+</html>

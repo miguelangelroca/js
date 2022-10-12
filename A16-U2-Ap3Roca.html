@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misterio asesinato</title>
+</head>
+
+<body>
+    <h2>Seleccione la habitacion y el sospechoso para resolver el misterioso asesinato: </h2>
+    <form>
+        <p>
+            <label>Habitación</label>
+            <select id="habitacion">
+                <option value=""></option>
+                <option value="El salón de baile">El salón de baile</option>
+                <option value="La galería">La galería</option>
+                <option value="La sala de billar">La sala de billar</option>
+                <option value="El comedor">El comedor</option>
+            </select>
+        </p>
+        <p>
+            <label>Sospechoso</label>
+            <select id="sospechoso">
+                <option value=""></option>
+                <option value="SR. Parkes">SR. Parkes</option>
+                <option value="Sra. Van Cleve">Sra. Van Cleve</option>
+                <option value="Sra. Sparr">Sra. Sparr</option>
+                <option value="Sr. Kalehoff">Sr. Kalehoff</option>
+            </select>
+        </p>
+        <button onclick="misterio()">Enviar</button>
+    </form>
+    <script type="text/javascript">
+        var salas = { 'El salón de baile': 'Veneno', 'La galería': 'Trofeo', 'La sala de billar': 'Palo', 'El comedor': 'Cuchillo' };
+        var sospechosos = { 'El salón de baile': 'Sr. Kalehoff', 'La galería': 'Sra. Van Cleve', 'La sala de billar': 'Sra. Sparr', 'El comedor': 'SR. Parkes' };
+        function misterio() {
+            var habitacion = document.getElementById('habitacion').value;
+            var sospechoso = document.getElementById('sospechoso').value;
+            var resolver = { habitacion: sospechoso };
+            if (habitacion && sospechoso) {
+                if (sospechosos[habitacion] == sospechoso) {
+                    alert(`${sospechoso} lo hizo en el ${habitacion} con el ${salas[habitacion]}`);
+                    console.log(`${sospechoso} lo hizo en el ${habitacion} con el ${salas[habitacion]}`);
+                } else {
+                    alert(`${sospechoso} es inocente...`);
+                    console.log(`${sospechoso} es inocente...`);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
