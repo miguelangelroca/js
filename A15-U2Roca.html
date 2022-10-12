@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones</title>
+</head>
+
+<body>
+    <h2>Indique la conversión de tipos que desea hacer: </h2>
+    <button onclick="cadena()">A cadena</button>
+    <button onclick="logico()">A boolean</button>
+    <button onclick="entero()">A entero</button>
+    <button onclick="flotante()">A float</button>
+    <button onclick="numero()">A number</button>
+
+    <script type="text/javascript">
+        function cadena() {
+            alert(String(prompt("introduzca lo que quiere convertir a cadena: ")));
+        }
+        function logico() {
+            var valor = prompt("introduzca lo que quiere convertir a boolean: ");
+            if (parseInt(valor) > 0) {
+                valor = 1;
+            } else if (parseInt(valor) == 0) {
+                valor = 0
+            }
+            alert(Boolean(valor));
+        }
+        function entero() {
+            alert(parseInt(prompt("introduzca lo que quiere convertir a entero: ")));
+        }
+        function flotante() {
+            alert(parseFloat(prompt("introduzca lo que quiere convertir a float: ")));
+        }
+        function numero() {
+            var valor = prompt("introduzca lo que quiere convertir a number: ");
+            console.log(valor);
+            if (valor == "true") {
+                valor = true;
+            } else if (valor == "false") {
+                valor = false;
+            }
+            alert(Number(valor));
+        }
+    </script>
+</body>
+
+</html>
